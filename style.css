@@ -306,4 +306,109 @@ footer {
   width: 120px;
   margin-right: 10px;
 }
+.cart2{
+  width: 100%;
+  margin-bottom: 5vh;
+}
+.productContainer,.productContainer2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  padding-inline: 10vh;
+  row-gap: 20px;
+}
+.information{
+  width: 35vh;
+  height: 50vh;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 0.1px grey;
+  cursor: pointer;
+}
+.information:hover{
+  box-shadow: 10px 20px 10px 0.1px rgba(128, 128, 128, 0.658);
+}
+.pic{
+  width: 30vh;
+}
+.pic img{
+  width: 100%;
+  border-radius: 10px;
+}
+.brands{
+  color: grey;
+  font-size: 14px;
+}
+.product_name{
+  font-weight: 500;
+}
+.ri-star-s-fill{
+  color: rgb(255, 145, 0);
+}
+.price{
+  font-weight: 600;
+  color: green;
+}
+.addToCart{
+  width: 7vh;
+  height: 7vh;
+  color: green;
+  background-color: rgba(0, 128, 0, 0.247);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+.addToCart:hover{
+  color: white;
+  background-color: green;
+}
+.last{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.cartText{
+  width: 100%;
+  text-align: center;
+  height: 20vh;
+}
+.cartText h1{
+  font-size: 45px;
+}
+.cartText p{
+  color: grey;
+}
+
+
+/* shop css */
+
+.banner3{
+  width: 100%;
+  position: relative;
+}
+.banner3 img{
+  width: 100%;
+  margin-top: 10vh;
+}
+.shop_text{
+  color: white;
+  position: absolute;
+  top: 25vh;
+  left: 40%;
+  text-align: center;
+}
+.shop_text h1{
+  font-size: 44px;
+  font-weight: 600;
+}
+.productContainer3{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 20px;
+  padding-inline: 10vh;
+}
