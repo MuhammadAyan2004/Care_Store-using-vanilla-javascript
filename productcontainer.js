@@ -2,7 +2,7 @@ export const showProductContainer = (product)=>{
     
     const productcontainer = document.querySelector(".productContainer")
     const productcontainer2 = document.querySelector(".productContainer2")
-    const productTemp = document.getElementById("productTemp")
+    const productTemp = document.querySelector("#productTemp")
 
     if(!product || product.length === 0){
         return false
