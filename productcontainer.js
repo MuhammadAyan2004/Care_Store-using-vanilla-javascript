@@ -1,3 +1,5 @@
+import { addtocart } from "./addtocart"
+
 export const showProductContainer = (product)=>{
     
     const productcontainer = document.querySelector(".productContainer")
@@ -19,6 +21,9 @@ export const showProductContainer = (product)=>{
         tempClone.querySelector(".brands").innerHTML = brand;
         tempClone.querySelector(".product_name").innerHTML = name;
         tempClone.querySelector(".price").textContent = `$${price}`
+        tempClone.querySelector(".addToCart").addEventListener("click",(event)=>{
+            addtocart(event,id)
+        })
 
         productcontainer.appendChild(tempClone)
     })
@@ -31,6 +36,9 @@ export const showProductContainer = (product)=>{
         tempClone.querySelector(".brands").innerHTML = brand;
         tempClone.querySelector(".product_name").innerHTML = name;
         tempClone.querySelector(".price").textContent = `$${price}`
+        tempClone.querySelector(".addToCart").addEventListener("click",(event)=>{
+            addtocart(event,id)
+        })
 
         productcontainer2.appendChild(tempClone) 
     })
